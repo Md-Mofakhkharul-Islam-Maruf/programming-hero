@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body{
+            border: 1px solid red;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image-container{
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 576px){
+            .image-container div{
+                text-align: end;
+            }
+            .image-container img{
+                width: 50%
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive technique</h1>
+    <ol>
+        <li>viewport</li>
+        <li>css relative unit</li>   
+        <li>Body max width and center align</li>   
+        <li>image fluid</li>
+        <li>For two column flex use media query and flex direction column</li>
+        <li>For multi column use grid </li>
+        <li>Menu Responsive to use java script</li>
+    </ol>
+    <div class="image-container">
+        <div class="image">
+            <img src="assets/images/food.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="assets/images/food.webp" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>

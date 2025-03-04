@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<h1>What's on your mind?</h1>
+<section>
+    <h3>All comment here</h3>
+    <div id="comment-container">
+        <p class="comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptates dolore optio
+            dolorem sequi tempore quibusdam ratione doloremque perspiciatis exercitationem!</p>
+        <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum accusantium alias
+            excepturi dolore quae exercitationem minus sit corrupti doloribus.</p>
+    </div>
+    <textarea name="" id="text-comment" cols="50" rows="5"></textarea>
+    <button id="post">Post comment</button>
+</section>
+
+<body>
+    <script>
+
+        // step 1: addEventListener to the id 'post'
+        document.getElementById('post').addEventListener('click', function () {
+
+            // step 2: take value of textbox and store in comment variable'
+            const comment = document.getElementById('text-comment').value;
+
+            // step 3: create a p tag'        
+            const createElement = document.createElement('p')
+
+            // step 4: create a class of p tag'  
+            createElement.classList.add('comment')
+
+            // step 5: set the comment inside p tag'  
+            createElement.innerText = comment
+
+            // step 6: call the div tag using it's id 
+            const divtag = document.getElementById('comment-container')
+
+             // step 73: append the p tag inside div tag
+            divtag.appendChild(createElement)
+
+            //comment.value=''
+
+            // step 8: clear the comment box
+            document.getElementById('text-comment').value = ''
+
+        })
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

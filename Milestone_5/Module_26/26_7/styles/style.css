@@ -1,0 +1,24 @@
+body{
+    border: 2px solid red;
+    margin: 2px;
+}
+h1{
+    border: 2px solid red;
+    margin: 2px;
+}
+section{
+    border: 2px solid green;
+    margin: 2px;
+}
+h3{
+    border: 2px solid purple;
+    margin: 2px;
+}
+ol{
+    border: 2px solid peru;
+    margin: 2px;
+}
+li{
+    border: 2px solid hotpink;
+    margin: 2px;
+}

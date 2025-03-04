@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- The best way to add event is addEventListener -->
+    <button id="make-orange">Make Orange</button>
+<script>
+    document.getElementById('make-orange').addEventListener('click',function (){
+        document.body.style.backgroundColor='orange'
+    })
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>

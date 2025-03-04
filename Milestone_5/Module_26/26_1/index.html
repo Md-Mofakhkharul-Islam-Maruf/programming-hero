@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Option 1 for event handler -->
+    <button onclick="console.log('welcome')">Button</button>
+    <button onclick="console.log('hellow')">Button</button>
+    <button onclick="console.log('Whats up')">Button</button>
+    <br>
+
+    <!-- Option 2 for event handler -->
+    <button onclick="makeYellow()">Make yellow</button>
+    <button onclick="makeRed()">Make red</button>
+    <button id="btn-make-blue">Make Blue</button>
+    <br>
+
+    <!-- For option 3 -->
+     <button id="make-purple">Make purple</button>
+    <script>
+    </script>
+    <script>
+        // for option 2
+        function makeYellow() {
+            document.body.style.backgroundColor = 'yellow'
+        }
+
+        function makeRed() {
+            document.body.style.backgroundColor = 'red'
+        }
+
+        const btnMakeBlue = document.getElementById('btn-make-blue');
+        btnMakeBlue.onclick = function makeblue() {
+            document.body.style.backgroundColor = 'blue'
+        }
+
+        // Option 3. 
+        const makePurple= document.getElementById('make-purple')
+        makePurple.onclick= makepurple;
+        function makepurple(){
+            document.body.style.backgroundColor='purple'
+        }
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

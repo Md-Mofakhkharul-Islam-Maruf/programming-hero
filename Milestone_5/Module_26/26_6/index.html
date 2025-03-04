@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <button id="btn-mouse">Micky mouse</button>
+    <input type="email" name="" id="email" placeholder="email">
+    <input type="text" id="name" placeholder="name"><br><br><br>
+
+    <input type="text" name="" id="input-delete" placeholder="type 'delete' to active button">
+    <button id="delete" disabled>delete</button>
+    <h2 id="hidden-text">Hidden text</h2>
+    <script>
+
+        // few mouse event
+        document.getElementById('btn-mouse').addEventListener('mouseenter',
+            function () {
+                console.log('event triggerd')
+            }
+        )
+
+
+        document.getElementById('btn-mouse').addEventListener('mousemove',
+            function () {
+                console.log('event triggerd')
+            }
+        )
+
+
+        document.getElementById('btn-mouse').addEventListener('mouseout',
+            function () {
+                console.log('event triggerd')
+            }
+        )
+
+
+        document.getElementById('btn-mouse').addEventListener('mouseout',
+            function () {
+                console.log('event triggerd')
+            }
+        )
+
+        document.getElementById('email').addEventListener('focus',
+            function () {
+                console.log('focused on email')
+            }
+        )
+
+        document.getElementById('name').addEventListener('focus',
+            function () {
+                console.log('focused on name')
+            }
+        )
+
+        document.getElementById('name').addEventListener('blur',
+            function () {
+                console.log('user done name')
+            }
+        )
+
+        // few key's event
+        document.getElementById('name').addEventListener('keyup',
+            function () {
+                console.log('keyup')
+            }
+        )
+        document.getElementById('name').addEventListener('keyup',
+            function (event) {
+                console.log('typing', event)
+            }
+        )
+        document.getElementById('name').addEventListener('keyup',
+            function (event) {
+                console.log(event.target)
+            }
+        )
+        document.getElementById('name').addEventListener('keyup',
+            function (event) {
+                console.log(event.target.value)
+            }
+        )
+
+
+
+
+
+        document.getElementById('input-delete').addEventListener('keyup',
+            function (event) {
+                const text = event.target.value
+                console.log('user typing', text)
+                const btndlt= document.getElementById('delete')
+
+                if (text == 'delete') {
+                    btndlt.removeAttribute('disabled')
+                    const hiddentxt=document.getElementById('hidden-text')
+                    hiddentxt.style.visibility='hidden'
+                }else{
+                    btndlt.setAttribute('disabled', true)
+                }
+
+            }
+        )
+
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

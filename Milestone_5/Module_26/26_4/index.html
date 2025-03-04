@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- The best way to add event is addEventListener -->
+    <h1 id="my-name">What is your name?</h1>
+    <button id="check-name">Check your name</button><br><br>
+
+    <p id="input-name">Input name bellow</p>
+    <input id="name" placeholder="Your name" type="text">
+    <button id="update-name">update</button>
+    <script>
+        document.getElementById('check-name').addEventListener('click', function () {
+            const getName = document.getElementById('my-name');
+            getName.innerText = "Maruf"
+        })
+
+        document.getElementById('update-name').addEventListener('click', function () {
+            name = document.getElementById('name').value //take input field's placeholder's value assigned in name variable
+            const inputName= document.getElementById('input-name')
+            inputName.innerText= name //assign the value of name variable look 2 line upper
+        })
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

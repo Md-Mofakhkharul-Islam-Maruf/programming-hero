@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <section>
+        <h3>Event delegate</h3>
+        <ol id="item-lists">
+            <li class="list">Md. Mofakhkharul Islam Maruf</li>
+            <li class="list">Md. Mofakhkharul Islam Maruf</li>
+            <li class="list">Md. Mofakhkharul Islam Maruf</li>
+            <li class="list">Md. Mofakhkharul Islam Maruf</li>
+            <li class="list">Md. Mofakhkharul Islam Maruf</li>
+            <li class="list">Md. Mofakhkharul Islam Maruf</li>
+        </ol>
+        <button id="add-item">
+            Add new item
+        </button>
+    </section>
+    <script>
+
+       /* 
+       //This is normal event handling
+        const items = document.getElementsByClassName('list')
+        for (item of items) {
+            item.addEventListener('click', function (event) {
+                //console.log(event.target.parentNode)
+                event.target.parentNode.removeChild(event.target)
+            })
+        }*/
+        // This is event delegation
+        document.getElementById('item-lists').addEventListener('click', function(event){
+            console.log(event.target)
+            event.target.parentNode.removeChild(event.target)
+        })
+
+        
+        document.getElementById('add-item').addEventListener('click', function () {
+            const li = document.createElement('li');
+            li.innerText = 'hellow world';
+            li.classList.add('list')
+        
+            const ol = document.getElementById('item-lists');
+            ol.appendChild(li)
+        })
+
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

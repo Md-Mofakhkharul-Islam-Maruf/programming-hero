@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>Bubble event</h1>
+    <section>
+        <h3>Our list item</h3>
+        <ol id="item-lists">
+            <li id="item-1">klfkfdsg.</li>
+            <li id="item-2">fsgfdgdfg</li>
+            <li id="item-3">fgsdfgsdgd</li>
+            <li id="item-4">dsgsdfgds</li>
+            <li id="item-5">dfgdfg</li>
+            <li id="item-6">fgdfgdfgds</li>
+        </ol>
+    </section>
+    <script>
+        // list item 2 click handler
+        document.getElementById('item-2').addEventListener('click', function (){
+            console.log('item 2 clicked')
+        }) 
+        // stop bubbling
+        document.getElementById('item-2').addEventListener('click', function (event){
+            console.log('item 2 clicked')
+            event.stopPropagation()
+        })
+        // ol click handler
+        document.getElementById('item-lists').addEventListener('click', function (){
+            console.log(' ol clicked')
+        })
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

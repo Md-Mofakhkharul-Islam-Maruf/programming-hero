@@ -1,0 +1,15 @@
+p{
+    text-align: center;
+    background-color: brown;
+}
+.car-img{
+    width: 1000px;
+}
+div{
+    text-align: center;
+}
+i{  
+    background-color: aqua;
+    display: block;
+    text-align: center;
+}

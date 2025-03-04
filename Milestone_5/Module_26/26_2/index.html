@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- for option 1 -->
+    <button onclick="console.log('welcome')">Button</button>
+    <button onclick="console.log('hellow')">Button</button>
+    <button onclick="console.log('Whats up')">Button</button>
+    <br><br>
+
+
+    <!-- for option 2 -->
+    <button onclick="make_red()">Make-red</button>
+    <script>
+        function make_red(){
+            document.body.style.backgroundColor='red'
+        }
+    </script> 
+    <br><br>
+
+    <!-- for option 3 -->
+     <button id="make-green">Make green</button>
+     <button id="make-purple">Make Purple</button>
+<script>
+    // for option 3
+    const makeGreen= document.getElementById('make-green')
+    makeGreen.onclick= function make_green(){
+        document.body.style.backgroundColor='green'
+    }
+    
+    <!-- for option 3(different system) -->
+    const makePurple= document.getElementById('make-purple')
+    makePurple.onclick= make_purple;
+   function make_purple()
+    {
+        document.body.style.backgroundColor='purple'
+    }
+
+
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>
