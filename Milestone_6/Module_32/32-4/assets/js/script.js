@@ -1,16 +1,4 @@
-// primitive data types contains value not address
-let name = 'Maruf';
-let newName= name;
-console.log(newName)
-
-name= 'Hasan';
-console.log(newName)   
-
-
-// Non-primitive data types contains address not value that's why it changable
-let name2 = { fname: 'Maruf', lname: 'Hasan'};
-let newName2= name2;
-console.log(newName2)
-
-name2.fname= 'Mehedi';
-console.log(newName2)   
+var x; // Hoisted declaration (undefined by default)
+console.log(x); // undefined
+x = 10; // Assignment happens here
+console.log(x); // 10
