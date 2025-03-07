@@ -1,16 +1,26 @@
-// primitive data types contains value not address
-let name = 'Maruf';
-let newName= name;
-console.log(newName)
+//These check only value not data type
 
-name= 'Hasan';
-console.log(newName)   
+const num1 = 4;
+const num2 = 4;
+if (num1 == num2){
+    console.log('these are same value')
+}else{
+    console.log('These are not same value')
+}
 
+//Check value and data type also
+const num3 = 4;
+const num4 = "4";
+if (num3 === num4){
+    console.log('these are same value')
+}else{
+    console.log('These are not same value')
+}
 
-// Non-primitive data types contains address not value that's why it changable
-let name2 = { fname: 'Maruf', lname: 'Hasan'};
-let newName2= name2;
-console.log(newName2)
-
-name2.fname= 'Mehedi';
-console.log(newName2)   
+const num5 = [];
+const num6 = [];
+if (num3 === num4){  //this will not same value because not primitive data store only address not the value inside variable.
+    console.log('these are same value')
+}else{
+    console.log('These are not same value')
+}
