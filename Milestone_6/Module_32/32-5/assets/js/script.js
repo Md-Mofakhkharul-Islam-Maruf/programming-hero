@@ -1,16 +1,18 @@
-// primitive data types contains value not address
-let name = 'Maruf';
-let newName= name;
-console.log(newName)
+function sum(){
+    let counter = 0;
+    return function(){
+        counter++;
+        console.log(counter)
+    }
+}
+// console.log(sum());
+const result= sum()
+result();
+result();
+result();
 
-name= 'Hasan';
-console.log(newName)   
+const result2= sum();
+result2();
+result2();
+result2();
 
-
-// Non-primitive data types contains address not value that's why it changable
-let name2 = { fname: 'Maruf', lname: 'Hasan'};
-let newName2= name2;
-console.log(newName2)
-
-name2.fname= 'Mehedi';
-console.log(newName2)   
