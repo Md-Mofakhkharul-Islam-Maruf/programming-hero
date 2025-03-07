@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    text-align: center;
+}
+.child{
+    background-color: bisque;
+    border: 2px solid red;
+    height: 200px;
+    width: 50%;
+    margin: 0 auto;
+}
+.child p{
+    background-color: red;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
