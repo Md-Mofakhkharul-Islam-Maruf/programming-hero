@@ -1,16 +1,10 @@
-// primitive data types contains value not address
-let name = 'Maruf';
-let newName= name;
-console.log(newName)
+let age=10;
+console.log(age++);
+console.log(age);
+console.log(++age);
 
-name= 'Hasan';
-console.log(newName)   
+console.log('===================');
 
-
-// Non-primitive data types contains address not value that's why it changable
-let name2 = { fname: 'Maruf', lname: 'Hasan'};
-let newName2= name2;
-console.log(newName2)
-
-name2.fname= 'Mehedi';
-console.log(newName2)   
+console.log(age--);
+console.log(age);
+console.log(--age);
