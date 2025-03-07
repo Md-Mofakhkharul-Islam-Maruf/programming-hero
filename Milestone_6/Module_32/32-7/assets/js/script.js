@@ -1,16 +1,38 @@
-// primitive data types contains value not address
-let name = 'Maruf';
-let newName= name;
-console.log(newName)
+// arguments
+function sum(a,b,c,d){
+    console.log(arguments);
+    const array=[...arguments]
+    console.log(array)
+}
+sum(10,23,32,31)
+console.log(sum.length)
 
-name= 'Hasan';
-console.log(newName)   
 
 
-// Non-primitive data types contains address not value that's why it changable
-let name2 = { fname: 'Maruf', lname: 'Hasan'};
-let newName2= name2;
-console.log(newName2)
+ //pass by value that means Maruf as a value that is passed by it's variable name : myName
+const myName = "Maruf";
+function test(take) {
+    take = "hasan"// this can't be change  
+}
+test(myName);
+console.log(myName)
 
-name2.fname= 'Mehedi';
-console.log(newName2)   
+
+//Pass by reference, tea value is change cz non-primitive data store by location address not by locatios nam
+const tea={name: 'pran tea', date: 'Jana nai'}
+function chaername(take){
+    take.name="Cocola"
+}
+chaername(tea);
+console.log(tea) // Here tea value is changed
+
+
+
+//Everything about function, why function return undefined
+
+function islam(){
+console.log("My name is Maruf")
+// return 'hello'
+}
+islam();
+console.log(islam()) //This line means i want to see return value of this islam funtion
