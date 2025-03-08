@@ -6,11 +6,12 @@
 .parent{
     height: 300px;
     background-color: rgb(176, 115, 36);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    /* align-content: end; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-self: center;
+    row-gap: 20px;
+    column-gap: 30px;
 }
 .child{
     background-color: rgb(136, 49, 218);
