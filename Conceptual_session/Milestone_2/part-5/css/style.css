@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 300px;
+    background-color: rgb(176, 115, 36);
+    display: grid;
+    grid-template-columns: repeat(3, 100px);  
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+    align-self: start;    
+}
+.child{
+    background-color: rgb(136, 49, 218);
+    border: 2px solid black;
+    min-width: 50px;
+}
