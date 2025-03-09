@@ -34,3 +34,12 @@ function message(take="Bangladesh"){
     console.log(take)
 }
 message();
+
+
+//Template string(``):
+const obj={name: 'Maruf', age: 25}
+const msg= `My name is ${obj.name} and my age is ${obj.age}`;
+
+document.body.innerHTML=`${msg}`;
+
+
