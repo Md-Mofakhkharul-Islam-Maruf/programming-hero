@@ -51,10 +51,10 @@ const square = x => {  //single paremeter
 }
 console.log(square(5))
 
-const add= (a,b)=>{
-    console.log('Result: ',a+b) //Multi parameter
+const add = (a, b) => {
+    console.log('Result: ', a + b) //Multi parameter
 }
-add(7,8)
+add(7, 8)
 
 
 
@@ -76,3 +76,15 @@ add(7,8)
 // console.log(window.usecase2);
 
 
+//Spered operator
+const ourName = ["Maruf", "Munna", "Muhit"];
+const ParentsName = ['Mokhlesur', 'Marfi'];
+const joinName = [...ourName, ...ParentsName];
+console.log(joinName);
+
+// Rest operator
+const rest = (...take) => {
+    console.log(take)
+}
+rest(1, 5, 6, 78, 9, 2);
+rest(3, 22, 555);
