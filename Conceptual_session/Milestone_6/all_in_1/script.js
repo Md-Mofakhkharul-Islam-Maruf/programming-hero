@@ -56,3 +56,23 @@ const add= (a,b)=>{
 }
 add(7,8)
 
+
+
+// var|| let || const
+
+// var hle= 'maruf';
+// var hle ="hasan";
+// console.log(hle);
+
+
+// let newname= 'maruf';
+// let newname ="hasan";
+// console.log(newname);
+
+
+// var usecase1="10";
+// let usecase2= "20";
+// console.log(window.usecase1);
+// console.log(window.usecase2);
+
+
