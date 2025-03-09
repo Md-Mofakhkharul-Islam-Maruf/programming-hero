@@ -30,16 +30,29 @@ function sayGoodbye() {
 greet("Alice", sayGoodbye);
 
 //Default parameter.
-function message(take="Bangladesh"){
+function message(take = "Bangladesh") {
     console.log(take)
 }
 message();
 
 
 //Template string(``):
-const obj={name: 'Maruf', age: 25}
-const msg= `My name is ${obj.name} and my age is ${obj.age}`;
+const obj = { name: 'Maruf', age: 25 }
+const msg = `My name is ${obj.name} and my age is ${obj.age}`;
 
-document.body.innerHTML=`${msg}`;
+document.body.innerHTML = `${msg}`;
 
+//Arrow function
+const show = () => console.log('From single line arrow function this function has no parameter')
+show();
+
+const square = x => {  //single paremeter
+    return x * x;
+}
+console.log(square(5))
+
+const add= (a,b)=>{
+    console.log('Result: ',a+b) //Multi parameter
+}
+add(7,8)
 
