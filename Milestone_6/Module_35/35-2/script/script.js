@@ -7,7 +7,5 @@ function response(){
 response();
 
 function displayCategories(data){
-
-    
     console.log(data)
 }
