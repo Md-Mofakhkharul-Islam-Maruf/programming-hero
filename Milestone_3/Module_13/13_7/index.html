@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind css</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <h1 class="border-8 border-double border-red-500 text-9xl">Welcome to css framework.</h1>
-    <h3 class="bg-teal-300">Here you goo.....</h3>
-    <p class="text-center text-teal-800 text-xl">let's do it.</p>
+    <header class="bg-[#fffbf0] pl-4">
+        <nav></nav>
+
+        <!-- Banner-section-start -->
+        <div class="md:flex md:justify-around md:items-center">
+            <div class="space-y-2">
+                <h1 class="text-orange-400 text-7xl">
+                    Be the Penguins <br><span class="text-gray-700">of Winter</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ab?</p>
+                <button
+                    class="bg-green-300 py-4 px-8 rounded-xl text-white font-bold bg-linear-to-r from-[#A4BC46] to-[#85A019]"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Buy now</button>
+            </div>
+            <div>
+                <img class="w-[500px] h-100"src="./assets/model.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
