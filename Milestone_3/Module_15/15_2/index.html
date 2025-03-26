@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- You can open the modal using ID.showModal() method -->
+    <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+        </div>
+    </dialog>
+
+    <label class="swap swap-flip text-5xl">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+
+        <div class="swap-on">😈</div>
+        <div class="swap-off">😇</div>
+    </label>
+
+    <input type="checkbox" value="synthwave" class="checkbox theme-controller" /><label
+        class="toggle text-base-content">
+        <input type="checkbox" value="synthwave" class="theme-controller" />
+
+        <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+            </g>
+        </svg>
+
+        <svg aria-label="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </g>
+        </svg>
+
+    </label>
+
+    <div class="join join-vertical bg-base-100">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title font-semibold">How do I create an account?</div>
+            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
+                registration process.</div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
+                instructions sent to your email.</div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title font-semibold">How do I update my profile information?</div>
+            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex justify-center">
+        <div class="carousel w-6/9 mx-auto">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
