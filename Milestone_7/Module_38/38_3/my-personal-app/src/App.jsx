@@ -18,6 +18,10 @@ function App() {
       <Person></Person>
       <Person></Person>
       <Sports></Sports>
+      <Name></Name>
+      <Developer keys='Maruf' tec='js'></Developer>
+      <Developer keys='Munna' tec='python'></Developer>
+      <Developer keys='Muhit' tec='Anaconda'></Developer>
     </>
   )
   function Person() {
@@ -32,12 +36,44 @@ function App() {
 
   function Sports() {
     return (
-      <div>
+      <div className='person'>
         <h2>Sports</h2>
         <ul>
           <li>Football</li>
           <li>Cricket</li>
           <li>High-Jump</li>
+        </ul>
+      </div>
+    )
+  }
+  function Name(){
+    const stl = {
+      color: 'blue',
+      fontSize: '32px',
+    }
+    return(
+      <div>
+        <ul style={stl}>
+          <li>Maruf</li>
+          <li>Munna</li>
+          <li>Muhit</li>
+        </ul>
+      </div>
+    )
+  }
+  
+  function Developer(props){
+    const stl = {
+      color: 'teal',
+      border: '2px solid teal',
+      borderRadius:'20px',
+      margin:'10px',
+    }
+    return(
+      <div style={stl}>
+        <ul>
+          <li>Developer: {props.keys} </li>
+          <li>Tech: {props.tec}</li>
         </ul>
       </div>
     )

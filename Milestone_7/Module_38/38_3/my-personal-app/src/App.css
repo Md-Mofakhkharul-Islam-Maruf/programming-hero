@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+.person{
+  color:red;
+  border: 2px solid green;
+  padding: 20px;
+  border-radius: 20px;
+}
