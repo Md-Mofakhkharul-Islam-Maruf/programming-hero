@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "material": "plastic",
+    "capacity_ml": 1000,
+    "color": "blue",
+    "brand": "AquaPure",
+    "isReusable": true,
+    "image": "https://example.com/images/bottle1.png"
+  },
+  {
+    "id": 2,
+    "material": "glass",
+    "capacity_ml": 500,
+    "color": "clear",
+    "brand": "EcoGlass",
+    "isReusable": true,
+    "image": "https://example.com/images/bottle2.png"
+  },
+  {
+    "id": 3,
+    "material": "stainless steel",
+    "capacity_ml": 750,
+    "color": "black",
+    "brand": "HydroFlex",
+    "isReusable": true,
+    "image": "https://example.com/images/bottle3.png"
+  },
+  {
+    "id": 4,
+    "material": "aluminum",
+    "capacity_ml": 600,
+    "color": "silver",
+    "brand": "MetalMate",
+    "isReusable": true,
+    "image": "https://example.com/images/bottle4.png"
+  },
+  {
+    "id": 5,
+    "material": "plastic",
+    "capacity_ml": 1200,
+    "color": "green",
+    "brand": "SportSip",
+    "isReusable": false,
+    "image": "https://example.com/images/bottle5.png"
+  }
+]
