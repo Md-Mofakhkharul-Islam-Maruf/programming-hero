@@ -6,7 +6,7 @@
       "author_img": "https://i.ibb.co/5Wn68jmv/1.jpg",
       "author": "Hamza Sohali",
       "posted_date": "September 15, 2025",
-      "reading_time": "5",
+      "reading_time": 5,
       "hashtag": ["beginners", "es6"]
     },
     {
@@ -16,7 +16,7 @@
       "author_img": "https://i.ibb.co/vCg9FgLh/2.jpg",
       "author": "Sara Lee",
       "posted_date": "October 1, 2025",
-      "reading_time": "7",
+      "reading_time": 7,
       "hashtag": ["javascript", "advanced"]
     },
     {
@@ -26,7 +26,7 @@
       "author_img": "https://i.ibb.co/C5xxpr1h/3.jpg",
       "author": "David Kim",
       "posted_date": "October 12, 2025",
-      "reading_time": "6",
+      "reading_time": 6,
       "hashtag": ["async", "promises"]
     },
     {
@@ -36,7 +36,7 @@
       "author_img": "https://i.ibb.co/Sq07xP1/4.jpg",
       "author": "Emily Clark",
       "posted_date": "October 20, 2025",
-      "reading_time": "4",
+      "reading_time": 4,
       "hashtag": ["array", "cheatsheet"]
     }
   ]

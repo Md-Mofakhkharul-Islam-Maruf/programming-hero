@@ -9,18 +9,24 @@ function App() {
 
   const handleBookMark = (blog)=>{
     setBookmarked([...bookmarked, blog])
-    console.log(bookmarked)
+    // console.log(bookmarked)
+  }
+
+  const [readingTime, setReadingTime ]=useState(0)
+  const handleReadingTime = (time)=>{
+    // console.log(time)
+    setReadingTime(readingTime + time)
   }
   return (
     <>
       <Navbar></Navbar>
       <div className="main-container flex text-center">
         <div className="left-container w-[70%] text-3xl">
-          <Blogs handleBookMark={handleBookMark}></Blogs>
+          <Blogs handleBookMark={handleBookMark} handleReadingTime={handleReadingTime}></Blogs>
         </div>
 
         <div className="right-container w-[30%] text-xl my-5">
-          <h3>Reading Time: 0</h3>
+          <h3>Reading Time: {readingTime}</h3>
           <h3>Bookmarked count: 0</h3>
           {
             bookmarked.map(marked=><p>{marked.title}</p>)
