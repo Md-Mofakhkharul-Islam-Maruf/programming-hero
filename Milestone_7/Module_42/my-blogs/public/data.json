@@ -38,16 +38,6 @@
       "posted_date": "October 20, 2025",
       "reading_time": "4",
       "hashtag": ["array", "cheatsheet"]
-    },
-    {
-      "id": "05",
-      "cover": "https://i.ibb.co/5W8ZPnvP/5.jpg",
-      "title": "Beginner's Guide to JavaScript Modules",
-      "author_img": "https://i.ibb.co/5W8ZPnvP/5.jpg",
-      "author": "John Doe",
-      "posted_date": "November 5, 2025",
-      "reading_time": "8",
-      "hashtag": ["modules", "beginners"]
     }
   ]
   
