@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Basic Plan",
-      "price": 29,
+      "price": "$19/Month",
       "description": "Perfect for beginners who need basic access to gym equipment.",
       "features": [
         "Access to all gym equipment",
@@ -17,8 +17,8 @@
     {
       "id": 2,
       "name": "Standard Plan",
-      "price": 49,
-      "description": "Ideal for regular gym-goers who want more classes and extra facilities.",
+      "price":"$49/Month",
+      "description": "Ideal for regular gym-goers classes and extra facilities.",
       "features": [
         "Access to all gym equipment",
         "Unlimited group fitness classes",
@@ -35,8 +35,9 @@
     {
       "id": 3,
       "name": "Premium Plan",
-      "price": 79,
-      "description": "For serious athletes needing 24/7 access, personalized coaching, and full facilities.",
+      "popular": true,
+      "price": "$79/Month",
+      "description": "For serious athletes needing 24/7 access, and full facilities.",
       "features": [
         "24/7 gym access",
         "Unlimited group fitness classes",
@@ -56,7 +57,7 @@
     {
       "id": 4,
       "name": "Student Plan",
-      "price": 19,
+      "price": "$19/Month",
       "description": "Affordable plan for students to stay fit and active.",
       "features": [
         "Access to gym equipment (limited hours)",
@@ -71,7 +72,7 @@
     {
       "id": 5,
       "name": "Elite Plan",
-      "price": 120,
+      "price": "$120/Month",
       "description": "Exclusive access for top athletes and VIP members.",
       "features": [
         "24/7 private gym access",
