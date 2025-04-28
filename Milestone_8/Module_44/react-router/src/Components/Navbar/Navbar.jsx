@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera } from 'lucide-react';
+import { CarFront } from 'lucide-react';
 
 const Navbar = () => {
     const navigationData = [
@@ -19,6 +19,9 @@ const Navbar = () => {
                     )
                 }
             </ul>
+            <div>
+                {/* <CarFront /> */}
+            </div>
         </div>
     );
 };
