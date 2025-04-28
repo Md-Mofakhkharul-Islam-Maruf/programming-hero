@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { CarFront, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
+
     const navigationData = [
         { id: 1, name: "Home", path: "/" },
         { id: 2, name: "About", path: "/about" },
@@ -9,23 +10,26 @@ const Navbar = () => {
         { id: 4, name: "Contact", path: "/contact" }
     ];
 
+    const link = navigationData.map(route => <li key={route.id}><a href={route.path} >{route.name}</a></li>)
+
     const [toggle, setToggle] = useState(true)
     return (
         <div>
             <nav className='flex justify-between'>
                 <span className='flex gap-2' onClick={() => setToggle(!toggle)}>
                     {
-                        toggle?<Menu/>: <X />
+                        toggle ? <Menu /> : <X />
                     }
+                    <ul className='md:hidden'>
+                        {
+                            link
+                        }
+                    </ul>
                     <h3>Mynav</h3>
                 </span>
-                <ul className='flex justify-center gap-20'>
+                <ul className='hidden md:flex justify-center gap-20'>
                     {
-                        navigationData.map(route =>
-                            <li key={route.id}>
-                                <a href={route.path} >{route.name}</a>
-                            </li>
-                        )
+                        link
                     }
                 </ul>
                 <h3>Sign In</h3>
