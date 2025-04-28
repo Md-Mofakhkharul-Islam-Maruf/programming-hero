@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "price": 29,
+      "description": "Perfect for beginners who need basic access to gym equipment.",
+      "features": [
+        "Access to all gym equipment",
+        "1 group fitness class per week",
+        "Locker room access",
+        "Free Wi-Fi",
+        "Access during staffed hours",
+        "Standard support",
+        "Mobile app access (basic features)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Standard Plan",
+      "price": 49,
+      "description": "Ideal for regular gym-goers who want more classes and extra facilities.",
+      "features": [
+        "Access to all gym equipment",
+        "Unlimited group fitness classes",
+        "Locker room and sauna access",
+        "1 personal training session per month",
+        "Free Wi-Fi",
+        "Extended hours access",
+        "Priority support",
+        "Mobile app access (full features)",
+        "1 guest pass per month",
+        "Access to virtual classes"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Premium Plan",
+      "price": 79,
+      "description": "For serious athletes needing 24/7 access, personalized coaching, and full facilities.",
+      "features": [
+        "24/7 gym access",
+        "Unlimited group fitness classes",
+        "Private locker",
+        "Weekly personal training sessions",
+        "Custom diet and fitness consultation",
+        "Unlimited guest passes",
+        "Access to all premium equipment",
+        "VIP lounge access",
+        "Priority booking for classes",
+        "Dedicated fitness coach",
+        "Exclusive member events",
+        "Mobile app with personal tracking and meal plans",
+        "Spa and massage therapy discounts"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Student Plan",
+      "price": 19,
+      "description": "Affordable plan for students to stay fit and active.",
+      "features": [
+        "Access to gym equipment (limited hours)",
+        "3 group fitness classes per month",
+        "Locker room access",
+        "Student-only fitness workshops",
+        "Free Wi-Fi",
+        "Discounted personal training sessions",
+        "Student community events"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Elite Plan",
+      "price": 120,
+      "description": "Exclusive access for top athletes and VIP members.",
+      "features": [
+        "24/7 private gym access",
+        "Unlimited personal training sessions",
+        "Custom-tailored workout and meal plans",
+        "Private sauna and spa access",
+        "Dedicated fitness and lifestyle coach",
+        "Private VIP lounge",
+        "Access to exclusive retreats and events",
+        "First priority on new classes and services",
+        "Free merchandise (monthly)"
+      ]
+    }
+  ]
+  
