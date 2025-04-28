@@ -10,17 +10,17 @@ const Navbar = () => {
         { id: 4, name: "Contact", path: "/contact" }
     ];
 
-    const link = navigationData.map(route => <li key={route.id}><a href={route.path} >{route.name}</a></li>)
+    const link = navigationData.map(route => <li key={route.id}><a className='hover:bg-amber-700' href={route.path} >{route.name}</a></li>)
 
-    const [toggle, setToggle] = useState(true)
+    const [toggle, setToggle] = useState(false)
     return (
         <div>
-            <nav className='flex justify-between'>
+            <nav className='flex justify-between mx-5 mt-5'>
                 <span className='flex gap-2' onClick={() => setToggle(!toggle)}>
                     {
-                        toggle ? <Menu /> : <X />
+                        toggle ?  <X /> :  <Menu />
                     }
-                    <ul className='md:hidden'>
+                    <ul className={`md:hidden absolute bg-amber-300 duration-500 ${toggle? 'top-8':'-top-30'}`}>
                         {
                             link
                         }
