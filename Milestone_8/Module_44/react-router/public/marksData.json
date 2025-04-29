@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Alice",
+      "subject": {
+        "math": 85,
+        "english": 78,
+        "science": 92
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "subject": {
+        "math": 74,
+        "english": 88,
+        "science": 81
+      }
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "subject": {
+        "math": 90,
+        "english": 85,
+        "science": 87
+      }
+    }
+  ]
+  
+  

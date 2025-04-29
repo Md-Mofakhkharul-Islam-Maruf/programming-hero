@@ -27,7 +27,8 @@ const ResultsChart = () => {
       ]
       
     return (
-        <div>
+        <div className='text-center w-5xl mx-auto'>
+          <h2 className='text-3xl'>Students Mark's</h2>
             <LineChart width={800} height={500} data={marks}>
                 <XAxis dataKey='name'></XAxis>
                 <YAxis></YAxis>
