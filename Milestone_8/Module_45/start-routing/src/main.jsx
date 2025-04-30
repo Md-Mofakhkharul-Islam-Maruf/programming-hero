@@ -48,6 +48,10 @@ const router = createBrowserRouter([
         Component: PostDetails,
       },
       {
+        path: '*',
+        element: <h3>Ekhane kichu nai</h3>
+      },
+      {
         path: 'users2',
         element: <Suspense fallback={<span>Loading.......</span>}>
           <Users2 users2Promise={users2Promise}></Users2>
