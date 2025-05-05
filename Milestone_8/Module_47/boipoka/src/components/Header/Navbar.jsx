@@ -6,7 +6,7 @@ const Navbar = () => {
         <li className='m-2'>About</li>
     </>
     return (
-        <div>
+        <div className='mb-5'>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
