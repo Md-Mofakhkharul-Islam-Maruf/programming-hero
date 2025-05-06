@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLoaderData } from 'react-router';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { getStoredBook } from '../../utilities/addToDb';
 
 const ReadList = () => {
+    const data = useLoaderData()
+    console.log(data)
+    useEffect(()=>{
+        const storedBookData = getStoredBook();
+        console.log(storedBookData)
+    },[])
     return (
         <div>
             <Tabs>
