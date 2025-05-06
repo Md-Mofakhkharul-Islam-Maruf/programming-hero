@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 
 const Book = ({ singlebook }) => {
-    console.log(singlebook);
+    // console.log(singlebook);
     const { image, author, bookId, bookName, publisher, review, totalPages, yearOfPublishing, rating, category, tags } = singlebook
     return (
         <Link to={`bookDetails/${bookId}`}>
@@ -17,7 +17,7 @@ const Book = ({ singlebook }) => {
                     </figure>
                     <div className='flex justify-around font-semibold text-blue-400'>
                         {
-                            tags.map(btn => <p>{btn}</p>)
+                            tags.map(btn => <p key={btn.bookId}>{btn}</p>)
                         }
                     </div>
                     <div className="card-body">
