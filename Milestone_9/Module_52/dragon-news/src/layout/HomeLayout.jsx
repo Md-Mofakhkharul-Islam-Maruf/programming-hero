@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import LeftAside from '../components/Homelayout/LeftAside';
 import RightAside from '../components/Homelayout/RightAside';
 import Categories from '../components/Categories';
+import FindUs from '../components/Homelayout/FindUs';
 
 const HomeLayout = () => {
     return (
@@ -15,7 +16,7 @@ const HomeLayout = () => {
                 <LatestNews></LatestNews>
                 <Navbar></Navbar>
             </header>
-            <main className='w-11/12 mx-auto border border-red-400 grid grid-cols-12 text-center'>
+            <main className='w-11/12 mx-auto border border-red-400 grid grid-cols-12 gap-5 text-center'>
                 <aside className='col-span-3'>
                     <LeftAside>
                     </LeftAside>
@@ -26,7 +27,8 @@ const HomeLayout = () => {
                     </Outlet>
                 </section>
                 <aside className='col-span-3'>
-                    <RightAside></RightAside>
+                    <RightAside>
+                    </RightAside>
                 </aside>
             </main>
         </div>
