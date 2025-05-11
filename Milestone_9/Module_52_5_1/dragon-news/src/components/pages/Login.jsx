@@ -17,7 +17,7 @@ const Login = () => {
                         <p className='text-center'>Don't have an Account?<Link to={'/auth/register'} className='font-bold text-red-600'> Register</Link></p>
                     </fieldset>
                 </div>
-            </div>       
+            </div>
         </div>
     );
 };
