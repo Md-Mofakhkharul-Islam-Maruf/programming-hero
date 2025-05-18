@@ -1,11 +1,35 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
 const AddCoffee = () => {
 
-    const handleAddCoffee= (e)=>{
+    const handleAddCoffee = (e) => {
         e.preventDefault()
         const form = e.target;
-        console.log('submitted')
+        const formData = new FormData(form)
+        // console.log(formData.entries())
+        const newCoffee = Object.fromEntries(formData.entries()) // collecting form's all fields value
+        console.log(newCoffee)
+
+        // Post data to db
+        fetch('http://localhost:3000/coffees', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newCoffee)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    console.log(`Coffee data added to Database`)
+                    Swal.fire({
+                        title: "Drag me!",
+                        icon: "success",
+                        draggable: true
+                    });
+                }
+            })
     }
 
     return (
@@ -23,8 +47,8 @@ const AddCoffee = () => {
                     </fieldset>
 
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-2">
-                        <label className="label">Chef</label>
-                        <input type="text" className="input w-full" name='chef' placeholder="My awesome page" />
+                        <label className="label">Price</label>
+                        <input type="text" className="input w-full" name='price' placeholder="Price" />
                     </fieldset>
 
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-2">
