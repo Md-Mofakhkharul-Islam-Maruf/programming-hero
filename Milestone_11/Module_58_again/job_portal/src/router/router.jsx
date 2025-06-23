@@ -4,6 +4,7 @@ import {
 import RootLayout from "../pages/layouts/RootLayout";
 import { Children, Component } from "react";
 import Home from "../pages/home/Home";
+import Register from "../pages/register/Register";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
+            },
+            {
+                path: '/register',
+                Component: Register
             }
         ]
     },
