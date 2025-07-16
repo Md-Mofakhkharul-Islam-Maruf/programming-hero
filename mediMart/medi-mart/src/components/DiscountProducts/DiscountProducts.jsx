@@ -50,9 +50,9 @@ const DiscountProducts = () => {
   const discounted = products.filter(p => p.discountPrice < p.price);
 
   return (
-    <section className="w-full py-12 bg-white min-h-screen">
+    <section className="w-full py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-red-500 text-center">
+        <h2 className="text-4xl font-bold mb-8 text-red-500 text-center">
           Discounted Products
         </h2>
 

@@ -37,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='bg-base-100 shadow-sm'>
+    <div className='bg-base-200 shadow-sm'>
       <div className="navbar max-w-7xl mx-auto px-4">
         {/* Left: Logo */}
         <div className="navbar-start">
