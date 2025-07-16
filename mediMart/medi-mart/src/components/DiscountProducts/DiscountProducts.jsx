@@ -69,7 +69,7 @@ const DiscountProducts = () => {
         >
           {discounted.map(product => (
             <SwiperSlide key={product.id}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden border hover:shadow-lg transition-all">
+              <div className="bg-white rounded-lg shadow-xl overflow-hidden border  hover:shadow-lg transition-all">
                 <img
                   src={product.image}
                   alt={product.name}
