@@ -67,8 +67,7 @@ const Navbar = () => {
           {/* Auth/Profile */}
           {!user ? (
             <>
-              <Link to="/login" className="btn btn-sm btn-primary">Login</Link>
-              <Link to="/register" className="btn btn-sm btn-secondary ml-2">Join Us</Link>
+              <Link to="/login" className="btn btn-sm btn-secondary ml-2">Join Us</Link>
             </>
           ) : (
             <div className="dropdown dropdown-end">

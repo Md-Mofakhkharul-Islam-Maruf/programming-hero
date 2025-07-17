@@ -33,7 +33,7 @@ const vendors = [
 
 const FeaturedVendors = () => {
   return (
-    <section className="w-full py-16 bg-gradient-to-b from-white to-green-50">
+    <section className="w-full py-16 bg-gradient-to-b from-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-red-500">
           🏥 Trusted Vendor Partners
