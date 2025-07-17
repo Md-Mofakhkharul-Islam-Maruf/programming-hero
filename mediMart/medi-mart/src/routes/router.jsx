@@ -7,6 +7,7 @@ import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import Error from "../pages/errorPage/Error";
 import ShopPage from "../pages/shop/ShopPage";
+import CategoryDetailsPage from "../components/categoryCard/CategoryDetails";
 
 export const router = createBrowserRouter([
     {
@@ -40,7 +41,11 @@ export const router = createBrowserRouter([
             {
                 path: '/shop',
                 Component: ShopPage
-            },
+            }, 
+            {
+                path: '/category/:categoryName',
+                component: CategoryDetailsPage
+            }
         ]
     },
 ]);
