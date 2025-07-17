@@ -91,7 +91,7 @@ const Login = () => {
                                 </fieldset>
                             </form>
                             {/* <SocialLogin from={from} onGoogleLogin={handleGoogleLogin} /> */}
-                            {/* <SocialLogin></SocialLogin> */}
+                            <SocialLogin></SocialLogin>
                         </div>
                     </div>
                 </div>
