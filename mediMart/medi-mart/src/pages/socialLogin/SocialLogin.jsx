@@ -27,7 +27,7 @@ const SocialLogin = () => {
         className="btn btn-outline w-full flex items-center gap-2"
       >
         <FaGithub />
-        Continue with GitHub
+        {/* Continue with GitHub */}
       </button>
     </div>
   );
