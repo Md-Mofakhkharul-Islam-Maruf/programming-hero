@@ -6,6 +6,7 @@ import CategoryDetails from "../components/categoryCard/CategoryDetails";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import Error from "../pages/errorPage/Error";
+import ShopPage from "../pages/shop/ShopPage";
 
 export const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
             {
                 path: '/*',
                 Component: Error
+            },
+            {
+                path: '/shop',
+                Component: ShopPage
             },
         ]
     },

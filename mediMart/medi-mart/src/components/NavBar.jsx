@@ -19,7 +19,7 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/products" className={({ isActive }) =>
+        <NavLink to="/shop" className={({ isActive }) =>
           isActive ? 'text-red-600 font-semibold' : 'text-gray-700 hover:text-red-600'}>
           Shop
         </NavLink>
