@@ -8,11 +8,22 @@ import Register from "../pages/register/Register";
 import Error from "../pages/errorPage/Error";
 import ShopPage from "../pages/shop/ShopPage";
 import CategoryDetailsPage from "../components/categoryCard/CategoryDetails";
+import CartPage from "../pages/cart/CartPage";
+import CheckoutPage from "../pages/checkoutPage/CheckoutPage";
+import InvoicePage from "../pages/invoicePage/InvoicePage";
+import AdminDashboard from "../layouts/AdminDashboard";
+import AdminHomePage from "../pages/admin/AdminHomePage";
+import ManageUser from "../pages/admin/ManageUser";
+import ManageCategory from "../pages/admin/ManageCategory";
+import PaymentManagement from "../pages/admin/PaymentManagement";
+import ManageBanner from "../pages/admin/ManageBanner";
+import SellsReport from "../pages/admin/SellsReport";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: Rootlayout,
+        errorElement: <Error />,
         children: [
             {
                 index: true,
@@ -35,17 +46,53 @@ export const router = createBrowserRouter([
                 Component: Register
             },
             {
-                path: '/*',
-                Component: Error
-            },
-            {
                 path: '/shop',
                 Component: ShopPage
-            }, 
+            },
+            {
+                path: '/cart',
+                element: <CartPage />
+            },
             {
                 path: '/category/:categoryName',
                 component: CategoryDetailsPage
-            }
+            }, {
+                path: '/checkout',
+                element: <CheckoutPage />
+            }, {
+                path: '/invoice',
+                element: <InvoicePage />
+            },
         ]
     },
+    {
+        path: '/admin',
+        element: <AdminDashboard/>,
+        children: [
+            {
+                path: '/admin/home', // /admin
+                element: <AdminHomePage />,
+            },
+            {
+                path: '/admin/manage-users',
+                element: <ManageUser/>
+            },
+            {
+                path: '/admin/manage-category',
+                element: <ManageCategory />,
+            },
+            {
+                path: '/admin/payments',
+                element: <PaymentManagement />,
+            },
+            {
+                path: '/admin/banner',
+                element: <ManageBanner/>
+            },
+            {
+                path: '/admin/sells-report',
+                element: <SellsReport/>
+            },
+        ]
+    }
 ]);

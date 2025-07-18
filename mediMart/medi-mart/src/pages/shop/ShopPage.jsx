@@ -55,7 +55,7 @@ const ShopPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-4">
       <div className="max-w-7xl mx-auto bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-bold mb-6 text-red-500">Shop Medicines</h1>
+        <h1 className="text-3xl font-bold mb-6 text-red-500 text-center">Shop Medicines</h1>
 
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse border border-gray-300">
@@ -63,6 +63,7 @@ const ShopPage = () => {
               <tr className="bg-blue-500 text-white">
                 <th className="border border-gray-300 px-4 py-2">Medicine Name</th>
                 <th className="border border-gray-300 px-4 py-2">Manufacturer</th>
+                <th className="border border-gray-300 px-4 py-2">Shop</th>
                 <th className="border border-gray-300 px-4 py-2">Price ($)</th>
                 <th className="border border-gray-300 px-4 py-2">Stock</th>
                 <th className="border border-gray-300 px-4 py-2">Actions</th>
@@ -71,9 +72,10 @@ const ShopPage = () => {
             <tbody>
               {medicines.map((med) => (
                 <tr key={med.id} className="hover:bg-gray-100">
-                  <td className="border border-gray-300 px-4 py-2">{med.name}</td>
+                  <td className="border border-gray-300 px-4 py-2 font-medium">{med.name}</td>
                   <td className="border border-gray-300 px-4 py-2">{med.manufacturer}</td>
-                  <td className="border border-gray-300 px-4 py-2">{med.price}</td>
+                  <td className="border border-gray-300 px-4 py-2">MediMart</td>
+                  <td className="border border-gray-300 px-4 py-2">${med.price}</td>
                   <td className="border border-gray-300 px-4 py-2">{med.stock}</td>
                   <td className="border border-gray-300 px-4 py-2 flex justify-center items-center space-x-2">
                     <button
@@ -118,6 +120,7 @@ const ShopPage = () => {
                 className="w-full h-48 object-cover rounded mb-4 border border-blue-200"
               />
               <p><span className="font-semibold text-blue-600">Manufacturer:</span> {selectedMedicine.manufacturer}</p>
+              <p><span className="font-semibold text-blue-600">Sold by:</span> MediMart</p>
               <p><span className="font-semibold text-blue-600">Price:</span> ${selectedMedicine.price}</p>
               <p><span className="font-semibold text-blue-600">Stock:</span> {selectedMedicine.stock}</p>
               <p className="mt-2"><span className="font-semibold text-blue-600">Description:</span> {selectedMedicine.description}</p>
